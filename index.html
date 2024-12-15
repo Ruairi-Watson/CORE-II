@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CORE Productivity Platform</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<h1>CORE</h1>
+<p>Boosting team productivity through gamification!</p>
+</header>
+<main>
+<!-- Login Section -->
+<section id="login">
+<h2>Login</h2>
+<form id="loginForm" aria-label="Team Login Form">
+<input type="email" id="email" placeholder="Email" aria-label="Email" required />
+<input type="password" id="password" placeholder="Password" aria-label="Password" required />
+<button type="submit" aria-label="Login Button">Login</button>
+</form>
+</section>
+
+<!-- Signup Section -->
+<section id="signup">
+<h2>Sign Up</h2>
+<form id="signupForm" aria-label="Team Sign Up Form">
+<input type="email" id="signupEmail" placeholder="Email" aria-label="Email" required />
+<input type="password" id="signupPassword" placeholder="Password" aria-label="Password" required />
+<input type="password" id="confirmPassword" placeholder="Confirm Password" aria-label="Confirm Password" required />
+<button type="submit" aria-label="Sign Up Button">Sign Up</button>
+</form>
+</section>
+
+<!-- Leaderboards Button Section -->
+<section id="leaderboardsButton">
+<button id="leaderboardsBtn" aria-label="View Leaderboards Button" onclick="window.location.href='leaderboards.html'">
+View Leaderboards
+</button>
+</section>
+
+<!-- Feedback Section -->
+<section id="feedback">
+<h2>Feedback</h2>
+<textarea id="feedbackText" placeholder="Share your thoughts with us!" aria-label="Feedback"></textarea>
+<button id="submitFeedback" aria-label="Submit Feedback Button">Submit</button>
+</section>
+</main>
+
+<!-- Leaderboard Page (for demo purposes) -->
+<div id="leaderboardPage" aria-live="polite">
+<section id="leaderboard">
+<h2>Leaderboard</h2>
+<ul id="leaderboardList" aria-live="polite"></ul>
+</section>
+</div>
+
+<script src="login.js" type="module"></script>
+<script src="leaderboard.js" type="module"></script> 
+</body>
+</html>
